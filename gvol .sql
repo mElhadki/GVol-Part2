@@ -42,11 +42,7 @@ CREATE TABLE `passager` (
 
 INSERT INTO `passager` (`Id_Passager`, `Nom`, `Prenom`, `Num_Passport`, `Id_U`) VALUES
 (16, 'GG', 'aa', '12AZD32', 2),
-(17, 'Mariem', 'El hadki', '12AZD32', 2),
-(18, 'GG', 'aa', '12AZD32', 2),
-(19, 'ss', 'aa', '12AZD32', 2),
-(20, 'salah', 'Abouanba', 'GG153432', 2),
-(21, 'Mariem', 'EL Hadki', '12AZD32', 1);
+(17, 'Mariem', 'El hadki', '12AZD32', 2),,
 
 -- --------------------------------------------------------
 
@@ -103,7 +99,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`Id_U`, `UserName`, `Passworde`, `email`, `statusU`) VALUES
 (1, 'Mariem', 'Admin123', 'elhadkimariem3@gmail.com', 'Admin'),
-(2, 'Salah', '123', 'salah@gmail.com', 'User');
+
 
 -- --------------------------------------------------------
 
