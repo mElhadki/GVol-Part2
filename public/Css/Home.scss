@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Poppins');
+
+$linear-Gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.315), rgba(34, 30, 30, 0.479));
+$Background1:url('../Images/haley-phelps-0GR2BmRvyEI-unsplash.jpg');
+$Background2:url('../Images/julian-hochgesang-s4i33r-KszI-unsplash.jpg');
+$Background3:url('../Images/margo-brodowicz-KZHhnb6XsQI-unsplash.jpg');
+$Blue:#67DAD5;
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+a:hover{
+   color: $Blue;
+}
+
+#Back1 {
+
+    background-image:
+    $linear-Gradient, $Background1;
+}
+
+#Back2 {
+
+    background-image:
+    $linear-Gradient, $Background2;
+}
+
+#Back3 {
+
+    background-image:
+    $linear-Gradient, $Background3;
+}
+
+.col-md-6 {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.Lien {
+  color: rgba(0, 0, 0, 0.25);
+}
+#logbox {
+    padding: 10px;
+    margin: 50px auto;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 175%;
+    color: #757575;
+    font-weight: 300;
+}
+
+h1,
+input {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.input {
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom-color: $Blue !important;
+}
+
+
+.inputButton {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: $Blue;
+    border: none;
+    box-shadow: 0 5px 0 $Blue;
+}
+
+.inputButton:hover {
+    top: 2px;
+    box-shadow: 0 3px 0 $Blue ;
+}
+
+.inputButton:active {
+    top: 5px;
+    box-shadow: none;
+}
+
+.inputButton:focus {
+    outline: none;
+}
+
+
+.btn-primary{
+
+    background-color: $Blue;
+    border:none;
+}
+.btn-primary:hover{
+
+    top: 2px;
+    box-shadow: 0 3px 0 $Blue ;
+    background-color: $Blue;
+}
+
+
+
+.card-body {
+    margin-top: 50px;
+    min-height: 300px;
+    position: relative;
+    padding: 30px 30px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.card-body:after {
+    display: block;
+    background: #67DAD5;
+    border-top: 2px solid #67DAD5;
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+
+.card-link a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #FF5722;
+    font-size: 15px;
+}
+.list-group-item {
+
+    background-color:rgba(0, 0, 0, 0);;
+  
+    
+}
+
+/*--------------- footer section starts here --------------- */
+
+footer{
+    font-family: "Open Sans",sans-serif;
+    background: #f1f1f1;
+    padding: 90px 0;
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  .left-col span{
+      color: #35d3cb;
+      font-family: Poppins !important;
+      transition: all 500ms ease-out;
+  }
+  
+  
+  .social-media{
+    margin: 20px 0;
+  }
+  
+  .social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #35d3cb;
+  }
+  
+  .right-col h1{
+    font-size: 26px;
+  }
+  
+  .border{
+    width: 100px;
+    height: 4px;
+    background: #35d3cb;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #35d3cb;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 350px;
+  }
+  
+  .inbt{
+    padding: 10px 40px;
+    font-size: 16px;
+    background: #35d3cb;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+    width: 50%;
+  }
+  
+  .inbt:hover{
+    opacity: .7;
+  }
+  .inbt input{
+      color: #fff;
+    background: none;
+    border: none;
+  }
+  .inbt input:hover{
+      color: #fff;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width:400px){
+    .inbt{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    } 
+   
+  }
+  
+  

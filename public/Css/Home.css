@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Poppins");
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+a:hover {
+  color: #67DAD5;
+}
+
+#Back1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.315)), to(rgba(34, 30, 30, 0.479))), url("../Images/haley-phelps-0GR2BmRvyEI-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.315), rgba(34, 30, 30, 0.479)), url("../Images/haley-phelps-0GR2BmRvyEI-unsplash.jpg");
+}
+
+#Back2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.315)), to(rgba(34, 30, 30, 0.479))), url("../Images/julian-hochgesang-s4i33r-KszI-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.315), rgba(34, 30, 30, 0.479)), url("../Images/julian-hochgesang-s4i33r-KszI-unsplash.jpg");
+}
+
+#Back3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.315)), to(rgba(34, 30, 30, 0.479))), url("../Images/margo-brodowicz-KZHhnb6XsQI-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.315), rgba(34, 30, 30, 0.479)), url("../Images/margo-brodowicz-KZHhnb6XsQI-unsplash.jpg");
+}
+
+.col-md-6 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.Lien {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+#logbox {
+  padding: 10px;
+  margin: 50px auto;
+  width: 70%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%;
+  color: #757575;
+  font-weight: 300;
+}
+
+h1,
+input {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.input {
+  width: 75%;
+  height: 50px;
+  display: block;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: #67DAD5 !important;
+}
+
+.inputButton {
+  position: relative;
+  width: 70%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #67DAD5;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #67DAD5;
+          box-shadow: 0 5px 0 #67DAD5;
+}
+
+.inputButton:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #67DAD5;
+          box-shadow: 0 3px 0 #67DAD5;
+}
+
+.inputButton:active {
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.inputButton:focus {
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #67DAD5;
+  border: none;
+}
+
+.btn-primary:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #67DAD5;
+          box-shadow: 0 3px 0 #67DAD5;
+  background-color: #67DAD5;
+}
+
+.card-body {
+  margin-top: 50px;
+  min-height: 300px;
+  position: relative;
+  padding: 30px 30px 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-body:after {
+  display: block;
+  background: #67DAD5;
+  border-top: 2px solid #67DAD5;
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.card-link a {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  color: #FF5722;
+  font-size: 15px;
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/*--------------- footer section starts here --------------- */
+footer {
+  font-family: "Open Sans",sans-serif;
+  background: #f1f1f1;
+  padding: 90px 0;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.left-col span {
+  color: #35d3cb;
+  font-family: Poppins !important;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.social-media a:hover {
+  color: #35d3cb;
+}
+
+.right-col h1 {
+  font-size: 26px;
+}
+
+.border {
+  width: 100px;
+  height: 4px;
+  background: #35d3cb;
+}
+
+.newsletter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.txtb {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #35d3cb;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 350px;
+}
+
+.inbt {
+  padding: 10px 40px;
+  font-size: 16px;
+  background: #35d3cb;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+  width: 50%;
+}
+
+.inbt:hover {
+  opacity: .7;
+}
+
+.inbt input {
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.inbt input:hover {
+  color: #fff;
+}
+
+.page-content {
+  min-height: 100vh;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  .inbt {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
