@@ -1,4 +1,11 @@
-
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1
+-- Généré le :  sam. 30 mai 2020 à 23:32
+-- Version du serveur :  10.1.36-MariaDB
+-- Version de PHP :  7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -12,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `GVOL`
+-- Base de données :  `gvol`
 --
 
 -- --------------------------------------------------------
@@ -29,6 +36,18 @@ CREATE TABLE `passager` (
   `Id_U` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `passager`
+--
+
+INSERT INTO `passager` (`Id_Passager`, `Nom`, `Prenom`, `Num_Passport`, `Id_U`) VALUES
+(16, 'GG', 'aa', '12AZD32', 2),
+(17, 'Mariem', 'El hadki', '12AZD32', 2),
+(18, 'GG', 'aa', '12AZD32', 2),
+(19, 'ss', 'aa', '12AZD32', 2),
+(20, 'salah', 'Abouanba', 'GG153432', 2),
+(21, 'Mariem', 'EL Hadki', '12AZD32', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -41,6 +60,15 @@ CREATE TABLE `reservation` (
   `id_Vol` int(11) NOT NULL,
   `Date_Reservation` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `reservation`
+--
+
+INSERT INTO `reservation` (`id_Reservation`, `Id_U`, `id_Vol`, `Date_Reservation`) VALUES
+(1, 2, 1, '2020-05-03'),
+(2, 2, 1, '2020-05-29'),
+(3, 1, 1, '2020-05-29');
 
 --
 -- Déclencheurs `reservation`
@@ -75,7 +103,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`Id_U`, `UserName`, `Passworde`, `email`, `statusU`) VALUES
 (1, 'Mariem', 'Admin123', 'elhadkimariem3@gmail.com', 'Admin'),
-
+(2, 'Salah', '123', 'salah@gmail.com', 'User');
 
 -- --------------------------------------------------------
 
@@ -99,10 +127,15 @@ CREATE TABLE `vol` (
 --
 
 INSERT INTO `vol` (`id_Vol`, `LieuDepart`, `LieuArrive`, `DateDepart`, `DateArrive`, `NbPlace`, `Prix`, `statusV`) VALUES
-(1, 'Marrakech', 'Paris', '2020-05-08', '2020-05-08', 50, 5000, 'Active'),
-(2, 'Marrakech', 'Paris', '2020-06-08', '2020-06-08', 50, 5000, 'Desactive'),
+(1, 'Marrakech', 'Paris', '2020-05-08', '2020-05-08', 47, 5000, 'Active'),
+(2, 'Marrakech', 'Paris', '2020-06-08', '2020-06-08', 50, 5000, 'Active'),
 (3, 'Marrakech', 'Paris', '2020-12-08', '2020-12-08', 50, 5000, 'Active'),
-(12, 'Marrakech', 'Lyon', '2020-05-26', '2020-05-27', 40, 10000, 'Active');
+(12, 'Marrakech', 'Lyon', '2020-05-26', '2020-05-27', 40, 10000, 'Active'),
+(13, 'Marrakech', 'Lyon', '2020-05-26', '2020-05-27', 40, 10000, 'Active'),
+(14, 'Marrakech', 'Paris', '2020-05-28', '2020-05-29', 40, 10000, 'Active'),
+(15, 'Rabat', 'Paris', '2020-05-28', '2020-05-29', 40, 10000, 'Active'),
+(16, 'Marrakech', 'Lyon', '2020-05-28', '2020-05-29', 40, 13445, 'Active'),
+(17, 'Marrakech', 'Madrid', '2020-05-29', '2020-05-30', 40, 10000, 'Active');
 
 --
 -- Index pour les tables déchargées
@@ -143,25 +176,25 @@ ALTER TABLE `vol`
 -- AUTO_INCREMENT pour la table `passager`
 --
 ALTER TABLE `passager`
-  MODIFY `Id_Passager` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_Passager` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT pour la table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `id_Reservation` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_Reservation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `Id_U` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `Id_U` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `vol`
 --
 ALTER TABLE `vol`
-  MODIFY `id_Vol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_Vol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Contraintes pour les tables déchargées
